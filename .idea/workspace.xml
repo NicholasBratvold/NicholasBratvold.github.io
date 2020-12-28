@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a860ef2f-c443-4c0f-a5c7-6660864f9cd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resume_Nicholas_Bratvold.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PDF/Resume_Nicholas_Bratvold.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagedump/Robot_circuit.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/imagedump/oscilloscope.heic" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,9 +19,12 @@
   </component>
   <component name="ProjectId" id="1mGRgCrENvxwZC4KhcQE7UWb21m" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="last_opened_file_path" value="C:/Eng Phys/CPEN 221/f19-mp2-ds570001-nicholasbratvold" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nichb\OneDrive\Documents\GitHub\NicholasBratvold.github.io\PDF" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\nichb\OneDrive\Documents\GitHub\NicholasBratvold.github.io\images" />
     </key>
@@ -74,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609123456317</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="first text changes">
+      <created>1609185885865</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609185885866</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +107,7 @@
     <MESSAGE value="test 2" />
     <MESSAGE value="template" />
     <MESSAGE value="first changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="first changes" />
+    <MESSAGE value="first text changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="first text changes" />
   </component>
 </project>
