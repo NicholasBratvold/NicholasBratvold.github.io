@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a860ef2f-c443-4c0f-a5c7-6660864f9cd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/Personal_profile.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -61,7 +60,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609118398962</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first changes">
+      <created>1609122786364</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609122786364</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -78,6 +84,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="test 2" />
     <MESSAGE value="template" />
-    <option name="LAST_COMMIT_MESSAGE" value="template" />
+    <MESSAGE value="first changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="first changes" />
   </component>
 </project>
