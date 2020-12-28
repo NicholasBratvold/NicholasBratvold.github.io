@@ -16,13 +16,14 @@
   </component>
   <component name="ProjectId" id="1mGRgCrENvxwZC4KhcQE7UWb21m" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="C:/Eng Phys/CPEN 221/f19-mp2-ds570001-nicholasbratvold" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nichb\OneDrive\Documents\GitHub\NicholasBratvold.github.io\PDF" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nichb\OneDrive\Documents\GitHub\NicholasBratvold.github.io" />
       <recent name="C:\Users\nichb\OneDrive\Documents\GitHub\NicholasBratvold.github.io\images" />
     </key>
   </component>
@@ -91,7 +92,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609190319772</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Links working">
+      <created>1609194452818</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609194452818</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Links working">
+      <created>1609194465917</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609194465917</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,6 +128,7 @@
     <MESSAGE value="first changes" />
     <MESSAGE value="first text changes" />
     <MESSAGE value="Project overview uploaded" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project overview uploaded" />
+    <MESSAGE value="Links working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Links working" />
   </component>
 </project>

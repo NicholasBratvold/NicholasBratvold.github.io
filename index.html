@@ -76,23 +76,32 @@
 						</div>
 
 					</section>
-
 				<!-- Three -->
 					<section id="three">
 						<h2>Get In Touch</h2>
 						<p></p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form name="form" id="form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSeYb9jz-LFNMSM7cMgQ1eJDDaDh3jBSis1oSHKW89xKiK2yXg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="entry.1110926457" id="entry.1110926457" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="entry.2049089871" id="entry.2049089871" placeholder="Email" /></div>
+										<div class="col-12"><textarea name="entry.1517013453" id="entry.1517013453" placeholder="Message" rows="4"></textarea></div>
 									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" /></li>
+									</ul>
 								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
+
+								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+								<script src="assets/js/jquery.min.js"></script>
+								<script type="text/javascript">var submitted=false;</script>
+								<script type="text/javascript">
+									$('#form').on('submit', function(e) {
+										$('#form *').fadeOut(2000);
+										$('#form').prepend('Message has been sent.');
+										});
+								</script>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
