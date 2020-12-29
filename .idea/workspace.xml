@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609198806081</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="TODO: detailing each project">
+      <created>1609199225376</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1609199225376</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +141,7 @@
     <MESSAGE value="Project overview uploaded" />
     <MESSAGE value="Links working" />
     <MESSAGE value="Message functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Message functionality" />
+    <MESSAGE value="TODO: detailing each project" />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO: detailing each project" />
   </component>
 </project>
