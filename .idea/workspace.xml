@@ -1,53 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a860ef2f-c443-4c0f-a5c7-6660864f9cd7" name="Default Changelist" comment="Finished first project draft">
-      <change afterPath="$PROJECT_DIR$/Project1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/CAD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/CADcollect1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/CADcollect2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/CADcollect3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/RowBots.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/TapepathCAD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/back1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/bluepill1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/bluepillexcel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/bluepillschem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/bottom1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/competitionsurface.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/electricalschem.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/electricalschem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/front1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/hbridge1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/hbridgeexcel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/hbridgeschem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/heatmap.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/motor1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/ramp1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/rowbot.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sensor1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch3t.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/sketch6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/tapesensor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/voltage.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imagedump/Robot/whole1.jpg" afterDir="false" />
+    <list default="true" id="a860ef2f-c443-4c0f-a5c7-6660864f9cd7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagedump/Robot/Circuit_whole.heic" beforeDir="false" afterPath="$PROJECT_DIR$/imagedump/Robot/Circuit_whole.heic" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imagedump/Robot/Circuit_whole.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/imagedump/Robot/Circuit_whole.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/projectTemplate.html" beforeDir="false" afterPath="$PROJECT_DIR$/projectTemplate.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PDF/Resume_Nicholas_Bratvold.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/PDF/Resume_Nicholas_Bratvold.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project1.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -194,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609282122666</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Finished first project draft">
+      <created>1609303620569</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609303620569</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
