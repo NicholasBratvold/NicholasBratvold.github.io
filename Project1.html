@@ -126,7 +126,7 @@
 
 						<h3 id="Mechanics">Mechanics:</h3>
 						<p>
-							The competition had to be completed at home with simple materials so my robot was constructed out of corrugated plastic, wire, tape, a few dowels, and whatever else I could get my hands on. The robot stayed mostly true to the CAD model except tape sensors were moved to front of robot and had a few extra attachments for more controlled movement of the empty cans.
+							The competition had to be completed at home with simple materials so my robot was constructed out of corrugated plastic, wire, tape, a few dowels, and whatever else I could get my hands on. The robot stayed mostly true to the CAD model except the tape sensors were moved to front of robot and I added a few extra attachments for more controlled movement of the empty cans.
 						</p>
 						<p>
 							One thing I regret doing is spray painting the robot. I neglected to calculate the weight of the paint. This addition resulted in my motors being too weak to move the robot so I had to cutout plastic that nicely covered various wires and had to increase the voltage on my motors. Now my robot was less than pretty, but it got the job done.
@@ -176,11 +176,11 @@
 						</p>
 						<p>
 							<b>Tape following:</b> </br>
-							We first started with a PID controller, but our electronic kit only had 2 tape sensors. We found values read from the tape sensors didn't give a wide enough spread of data for the PID algorithm to be effective. Instead we went with simple on-tape off-tape logic with a tuning knob that decided what was on the tape or off the tape, adjusting this knob would make the robot see the tape as thicker or thinner depending on the setting. Two sensors allowed us to see if the robot turned left or right off of the tape then correct accordingly. This method worked very well and allowed the robot to traverse the course twice within a minute which proved to be essential to pick up extra missed cans.
+							We first started with a PID tape following algorithm, but our electronic kit only had 2 tape sensors. We found values read from the tape sensors didn't give a wide enough spread of data for the PID algorithm to be effective. Instead, we went with simple on-tape off-tape logic with a tuning knob that decided what was on the tape or off the tape, adjusting this knob would make the robot see the tape as thicker or thinner depending on the setting. Two sensors allowed the robot to know if it turned left or right off of the tape, then correct accordingly. This method worked very well and allowed the robot to traverse the course twice within a minute which proved to be essential to pick up extra missed cans.
 						</p>
 						<p>
 							<b>Noise reduction:  </b> </br>
-							We used the LCD to display various info as our robot ran. This aided in showing sensor noise when motors were changing direction due to the motors inducing currents from the magnetic fields they create. I added some sensor averaging algorithms to reduce noise that showed up at the sensor inputs. Different light conditions would also change the tape sensors values. I created a calibration algorithm that I would run whenever the light conditions changed to standardize the light distribution. This allowed the robot to run the same in any light condition.
+							We used the LCD to display various info as our robot ran. This aided in showing sensor noise when motors were changing direction due to the motors creating magnetic fields which induces currents in the sensor wires. To compensate, I added some sensor averaging algorithms to reduce noise that showed up at the sensor inputs. </br></br>Different light conditions would also change the tape sensors values. I created a calibration algorithm that I would run whenever the light conditions changed to standardize the light distribution. This allowed the robot's performance to be the same in any light condition.
 						</p>
 						<p>
 							<b>Entertainment: </b> </br>
@@ -190,7 +190,7 @@
 							</article>
 						</p>
 						<p>
-							I also logged the success rate of my robot using Excel and created a map. This helped me optimize my robot and its tape path.
+							I also logged the success rate of my robot using Excel and created a map. This helped me optimize my robot and the tape path.
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="imagedump/Robot/heatmap.png" class="image fit thumb"><img src="imagedump/Robot/heatmap.png" alt="" /></a>
 							</article>
