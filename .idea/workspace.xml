@@ -171,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609305710456</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="editing">
+      <created>1609724968604</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1609724968604</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +206,7 @@
     <MESSAGE value="Resume Update" />
     <MESSAGE value="adding page templates" />
     <MESSAGE value="Finished first project draft" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished first project draft" />
+    <MESSAGE value="editing" />
+    <option name="LAST_COMMIT_MESSAGE" value="editing" />
   </component>
 </project>
