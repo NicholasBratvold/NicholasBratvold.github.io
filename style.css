@@ -6,3 +6,32 @@ body {
   canvas {
     display: block;
   }
+
+
+
+
+#name-last-section {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(231, 231, 231);
+    font-size: 42px;
+    font-family: 'Arial', sans-serif; /* Change the font-family as desired */
+  }
+
+  #navigation {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+  }
+
+  #navigation a {
+    color: rgb(231, 231, 231);
+    text-decoration: underline;
+    font-size: 18px;
+    font-family: 'Arial', sans-serif; /* Change the font-family as desired */
+  }
