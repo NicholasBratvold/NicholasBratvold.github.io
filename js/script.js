@@ -3,10 +3,10 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 let camera, scene, renderer, particles, controls, mouse;
 
-const n = 1789;
-const dt = 0.0002;
+const n = 2000;
+const dt = 0.0001;
 const frictionHL = 0.040;
-const rMax = 0.4;
+const rMax = 0.3;
 const m = 8;
 const attractions = makeRandomAttractionMatrix();
 const forceFactor = 10;
@@ -200,7 +200,12 @@ function makeRandomAttractionMatrix(){
     for (let i=0; i< m; i++){
         const row = [];
         for (let j = 0; j< m; j++){
-            row.push(Math.random() *2 - 1);
+            // if (i==j){
+            //     row.push(-1);
+            // } else{
+            //     row.push(Math.random()*2-1);
+            // }
+            row.push(Math.random() * 2 - 1);
         }
         matrix.push(row);
     }

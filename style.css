@@ -17,6 +17,7 @@ body {
     transform: translateX(-50%);
     color: rgb(231, 231, 231);
     font-size: 42px;
+    display: flex;
     font-family: 'Arial', sans-serif; /* Change the font-family as desired */
   }
 
