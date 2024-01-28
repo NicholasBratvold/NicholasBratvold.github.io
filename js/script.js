@@ -3,7 +3,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 let camera, scene, renderer, particles, controls, mouse;
 
-const n = 4000;
+const n = 1789;
 const dt = 0.0002;
 const frictionHL = 0.040;
 const rMax = 0.4;
