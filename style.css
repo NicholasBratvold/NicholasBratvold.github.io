@@ -69,11 +69,42 @@
     font-weight: bold;
   }
 
+  #canvas {
+    width: 100%; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
   section {
-    padding: 2rem;
-    background-color: #fff;
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 80px; /* Adjusted margin-top to make room for the fixed header */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8); /* Set background color and transparency */
+    color:rgb(231, 231, 231);
+    padding: 20px;
+    width: 60%;
+    font-size: 120%;
+  }
+
+  #scroll-container {
+    overflow-y: auto;
+    height: 100vh;
+  }
+
+  #content-container {
+    padding: 0px;
+  }
+
+  #scroll-container::-webkit-scrollbar {
+    width: 0px; /* You can adjust the width of the scrollbar */
+  }
+
+  #scroll-container::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the thumb color to transparent */
+    border: none; /* Remove the border */
   }
