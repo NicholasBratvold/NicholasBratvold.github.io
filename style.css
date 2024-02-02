@@ -80,7 +80,7 @@
 
   section {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -88,7 +88,8 @@
     color:rgb(231, 231, 231);
     padding: 20px;
     width: 60%;
-    font-size: 120%;
+    height: 80%;
+    font-size: 110%;
   }
 
   #scroll-container {
@@ -100,11 +101,27 @@
     padding: 0px;
   }
 
-  #scroll-container::-webkit-scrollbar {
-    width: 0px; /* You can adjust the width of the scrollbar */
+  .scrollable-content::-webkit-scrollbar {
+    width: 5px; /* You can adjust the width of the scrollbar */
   }
 
-  #scroll-container::-webkit-scrollbar-thumb {
-    background-color: transparent; /* Set the thumb color to transparent */
-    border: none; /* Remove the border */
+  .scrollable-content::-webkit-scrollbar-thumb {
+    background-color: grey; /* Set the thumb color to transparent */
+    border-radius: 5px; /* Remove the border */
+  }
+
+  .scrollable-content::-moz-scrollbar-thumb {
+    background-color: grey; /* Set the thumb color */
+    border-radius: 5px; /* Make it rounded */
+  }
+  
+  .scrollable-content::-moz-scrollbar-track {
+    background-color: transparent; /* Set the track color to transparent */
+  }
+
+  .scrollable-content {
+    max-height: 80%; /* Adjust the height as per your preference */
+    overflow-y: auto; /* Enable vertical scrollbar when content overflows */
+    
+    
   }
