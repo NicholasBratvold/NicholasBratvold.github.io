@@ -11,7 +11,7 @@
 
   #navigation {
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 10%;
     transform: translateX(-50%);
     display: flex;
@@ -80,7 +80,7 @@
 
   section {
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
@@ -88,8 +88,15 @@
     color:rgb(231, 231, 231);
     padding: 20px;
     width: 60%;
-    height: 80%;
-    font-size: 110%;
+    height: 70%;
+    font-size: 100%;
+
+    @media screen and (max-width: 767px) {
+      width: 90%; /* Adjust the width as needed for smaller screens */
+      height: 90%; /* Adjust the height as needed for smaller screens */
+      overflow-y: auto; /* Enable vertical scrollbar on smaller screens */
+    }
+
   }
 
   #scroll-container {
@@ -120,7 +127,7 @@
   }
 
   .scrollable-content {
-    max-height: 80%; /* Adjust the height as per your preference */
+    max-height: 90%; /* Adjust the height as per your preference */
     overflow-y: auto; /* Enable vertical scrollbar when content overflows */
     
     
