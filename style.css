@@ -94,7 +94,7 @@
     @media screen and (max-width: 767px) {
       width: 90%; /* Adjust the width as needed for smaller screens */
       height: 90%; /* Adjust the height as needed for smaller screens */
-      overflow-y: auto; /* Enable vertical scrollbar on smaller screens */
+      top: 70%;
     }
 
   }
