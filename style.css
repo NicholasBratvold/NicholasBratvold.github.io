@@ -69,13 +69,36 @@
     font-weight: bold;
   }
 
+  #container {
+    position: relative;
+    height: 100vh; /* Adjust this if necessary */
+  }
+
+  #timeSlider {
+    position: absolute;
+    top: 10px; /* Adjust this to change the distance from the top */
+    left: 50%;
+    transform: translateX(-50%); /* This centers the slider */
+    z-index: 3;
+    width: 80%; /* Adjust the width as desired */
+    height: 10px; /* Adjust the height as desired */
+    background-color: #ccc; /* Set the background color */
+    
+    border-radius: 5px; /* Add rounded corners */
+
+  }
+  
+
+
+
+
   #canvas {
     width: 100%; /* Adjust as needed */
     height: 100%; /* Adjust as needed */
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
   }
   section {
     position: absolute;

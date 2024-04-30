@@ -30,11 +30,11 @@ function resize() {
 window.addEventListener('resize',resize);
 resize();
 
-//SCROLLBAR FUNCTION DISABLE
-// window.onscroll = function () {
-     
-// }
+const timeSlider = document.getElementById('timeSlider');
 
+timeSlider.addEventListener('input', function() {
+  time = parseFloat(timeSlider.value);
+});
 var ambientLight = new THREE.AmbientLight(0x606060);
 scene.add(ambientLight);
 

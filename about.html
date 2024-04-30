@@ -14,18 +14,22 @@
     }
     </script>
     <script src="js/KeyboardState.js"></script>
-</head>
-<body>
-  <header style="position: fixed; top: 0; left: 0; right: 0;">
+  </head>
+  <body>
+    <header style="position: fixed; top: 0; left: 0; right: 0;">
     <h1>Nicholas Bratvold</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="files/Nick_s_Resume.pdf">Resume</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="files/Nick_Bratvold_Resume.pdf">Resume</a></li>
       </ul>
     </nav>
-  </header>
+    </header>
+
+    <div id="container" style="top: 10px; left: 10px; width: 100px; height: 100px;">
+      <input type="range" min="0" max="1" value="0" step="0.01" id="timeSlider">
+    </div>
 
   <div id="canvas"></div>
   <section style="margin-top: 100px;">
@@ -58,6 +62,7 @@
       </p>
     </div>
   </section>
+
 </body>
       </section>
       <script id="myVertShader" type="x-shader/x-vertex">
