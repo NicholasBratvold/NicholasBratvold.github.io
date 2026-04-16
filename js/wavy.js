@@ -60,7 +60,7 @@ function update() {
     requestAnimationFrame(update);
     marbleMaterial.uniforms.time.value = time;
     renderer.render(scene, camera);
-    time+=0.01;
+    time+=0.006;
   }
   
 update();

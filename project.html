@@ -22,6 +22,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="pointcloud.html">Remoscope</a></li>
         <li><a href="files/Nick_Bratvold_Resume.pdf">Resume</a></li>
       </ul>
     </nav>
@@ -35,7 +36,7 @@
 <section style="margin-top: 100px;">
     <h2>Recent Projects</h2>
     <div class="scrollable-content">
-        
+
         <div style="display: flex; align-items: stretch;">
             <div style="flex: 1; margin-right: 20px;">
                 <a href="imagedump/dt1500.png" class="image fit thumb"><img src="imagedump/dt1500.png" alt="" style="width: 100%; height: 100%; object-fit: cover;" /></a>
@@ -173,7 +174,7 @@
   //   https://gist.github.com/patriciogonzalezvivo/670c22f3966e662d2f83
   
   float rand(vec2 c){
-    return fract(sin(dot(c.xy ,vec2(45.9798,78.233))) * 10753.5453);
+    return fract(sin(dot(c.xy ,vec2(127.1,311.7))) * 43758.5453);
   }
   
   float noise(vec2 p, float freq ){
@@ -192,14 +193,14 @@
   }
   
   float pNoise(vec2 p, int res){
-    float persistance = .8;
+    float persistance = .65;
     float n = 0.;
     float normK = 0.;
-    float f = 2.;
-    float amp = 2.6;
+    float f = 0.5;
+    float amp = 3.0;
     int iCount = 0;
     for (int i = 0; i<10; i++){
-      n+=amp*noise(p, f) + 0.6*sin(0.5*time) + 0.1;
+      n+=amp*noise(p, f) + 0.8*sin(0.3*time) + 0.1;
       f*=2.;
       normK+=amp;
       amp*=persistance;
@@ -225,12 +226,11 @@
     float f = pattern(ocsPosition.xy, on, levels);
     vec3 colour = vec3(0.0);
 
-    // Adjusting color vectors for earthy tones with more red
-    colour = mix( vec3(255./255., 249./255., 225./255.), vec3(226./255., 114./255., 91./255.), f );
-    //last colour , first colour
-    colour = mix( colour, vec3(0.3, 0.3, 0.2), dot(on.zw, on.zw) );
-    colour = mix( colour, vec3(0.9, 0.2, 0.9), 0.1 + 0.2 * on.y * on.y );
-    colour = mix( colour, vec3(0.9, 0.2, 0.1), 0.5 * smoothstep(1.2, 1.5, abs(on.z) + abs(on.w)) );
+    // Deep blue/teal palette with warm highlights
+    colour = mix( vec3(200./255., 220./255., 235./255.), vec3(20./255., 60./255., 90./255.), f );
+    colour = mix( colour, vec3(0.05, 0.15, 0.25), dot(on.zw, on.zw) );
+    colour = mix( colour, vec3(0.6, 0.4, 0.2), 0.1 + 0.15 * on.y * on.y );
+    colour = mix( colour, vec3(0.1, 0.3, 0.35), 0.5 * smoothstep(1.2, 1.5, abs(on.z) + abs(on.w)) );
     colour = clamp( colour * f * 2.0, 0.0, 1.0 );
 
     // Manual derivatives - better quality, but slower
