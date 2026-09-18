@@ -156,3 +156,14 @@
     
     
   }
+
+  /* Invisible link in the bottom-right corner (reachable by URL or by clicking the corner) */
+  .hidden-link {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    z-index: 3;
+  }
