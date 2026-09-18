@@ -94,7 +94,7 @@
     <div id="initialsBox" style="margin-top:12px; display:none">New high score! Your initials: <input id="initials" maxlength="3" autocomplete="off"> <button class="btn" id="saveBtn">Save</button></div>
   </div>
   <table id="hsTable"></table>
-  <div class="row"><button class="btn primary" id="againBtn">Play again (Enter)</button><button class="btn" id="menuBtn">Menu</button><button class="btn" id="clearBtn">Clear scores</button></div>
+  <div class="row"><button class="btn primary" id="againBtn">Play again (Enter)</button><button class="btn" id="shareBtn">Share result</button><button class="btn" id="menuBtn">Menu</button><button class="btn" id="clearBtn">Clear scores</button></div>
 </section>
 
 <script>
@@ -163,7 +163,7 @@ function plan() {
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(rng() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
 function startGame() {
-  G = { levels: plan(), i: 0, score: 0, lives: LIVES, hits: 0, misses: 0, totalPar: 0, foundPar: 0 };
+  G = { levels: plan(), i: 0, score: 0, lives: LIVES, hits: 0, misses: 0, totalPar: 0, foundPar: 0, log: [] };
   G.levels.forEach(f => img(f.key));                  // decode ahead
   show("level"); $("lvlTot").textContent = G.levels.length;
   startLevel();
@@ -265,6 +265,7 @@ function endLevel(why) {
   if (L.over) return; L.over = true;
   const f = L.frame, n = f.boxes.length, k = L.found.size;
   G.totalPar += n; G.foundPar += k;
+  G.log.push({ neg: f.neg || n === 0, n, k, why, wrongClicks: L.clicks.filter(c => !c.hit && !c.neutral).length });
   let msg;
   if (why === "none-ok") msg = "Correct — this frame is clean. +" + NONE_OK;
   else if (why === "none-bad") msg = `Nope — there ${n === 1 ? "was" : "were"} ${n} parasite${n === 1 ? "" : "s"} here. ${NONE_BAD}, life lost.`;
@@ -287,7 +288,7 @@ function nextLevel() {
 
 // ---- results / high scores ---------------------------------------------------
 function finish() {
-  L = null; show("results");
+  L = null; show("results"); $("shareBtn").style.display = "";
   $("resultsTitle").textContent = G.lives <= 0 ? "Out of lives!" : "You made it!";
   $("finalScore").textContent = G.score;
   const acc = G.hits + G.misses ? Math.round(100 * G.hits / (G.hits + G.misses)) : 0;
@@ -297,6 +298,22 @@ function finish() {
   $("initialsBox").style.display = qualifies ? "block" : "none";
   if (qualifies) { $("initials").value = localStorage.getItem("ftp_last_initials") || ""; setTimeout(() => $("initials").focus(), 50); }
   renderHS(hs, null);
+}
+function levelEmoji(r) {
+  if (r.neg) return r.why === "none-ok" ? "🟩" : "🟥";                 // clean frame: N was right / wasn't pressed
+  if (r.why === "none-bad" || r.k === 0) return "🟥";
+  return r.k === r.n ? (r.wrongClicks ? "🟨" : "🟩") : "🟧";           // all found (clean or with misses) / some found
+}
+function shareText() {
+  const squares = G.log.map(levelEmoji).join("") + "⬛".repeat(Math.max(0, G.levels.length - G.log.length));
+  const pct = G.totalPar ? G.foundPar / G.totalPar : 0;
+  const badge = G.lives <= 0 ? "💀" : pct === 1 ? "🏆" : pct >= 0.8 ? "🔬" : pct >= 0.5 ? "🩸" : "🦠";
+  return `Find the Parasite — Daily ${todayKey()} ${badge}\nScore ${G.score.toLocaleString()} · parasites found ${G.foundPar}/${G.totalPar}\n${squares}`;
+}
+async function share() {
+  const txt = shareText();
+  try { await navigator.clipboard.writeText(txt); toast("copied — paste it anywhere", 1600); }
+  catch { window.prompt("Copy your result:", txt); }
 }
 function saveScore() {
   const ini = $("initials").value.replace(/[^a-z0-9]/gi, "").toUpperCase().slice(0, 3);
@@ -317,7 +334,7 @@ function refreshBest() { const hs = loadHS(); $("bestScore").textContent = hs.le
 // ---- wiring ------------------------------------------------------------------
 $("startBtn").onclick = () => { show("tutorial"); };
 $("howBtn").onclick = () => show("tutorial");
-$("scoresBtn").onclick = () => { G = { score: -1, lives: 1, hits: 0, misses: 0, foundPar: 0, totalPar: 0, i: -1, levels: [] }; show("results"); $("resultsTitle").textContent = "High scores"; $("finalScore").textContent = ""; $("finalStats").textContent = ""; $("initialsBox").style.display = "none"; renderHS(loadHS(), null); };
+$("scoresBtn").onclick = () => { G = { score: -1, lives: 1, hits: 0, misses: 0, foundPar: 0, totalPar: 0, i: -1, levels: [], log: [] }; $("shareBtn").style.display = "none"; show("results"); $("resultsTitle").textContent = "High scores"; $("finalScore").textContent = ""; $("finalStats").textContent = ""; $("initialsBox").style.display = "none"; renderHS(loadHS(), null); };
 $("playBtn").onclick = startGame;
 $("backBtn").onclick = () => show("title");
 $("noneBtn").onclick = pressNone;
@@ -326,6 +343,7 @@ $("nextBtn").onclick = nextLevel;
 $("againBtn").onclick = startGame;
 $("menuBtn").onclick = () => { refreshBest(); show("title"); };
 $("saveBtn").onclick = saveScore;
+$("shareBtn").onclick = share;
 $("clearBtn").onclick = () => { if (confirm("Clear all high scores on this computer?")) { saveHS([]); renderHS([], null); refreshBest(); } };
 $("initials").addEventListener("keydown", e => { if (e.key === "Enter") { e.preventDefault(); saveScore(); } e.stopPropagation(); });
 document.addEventListener("keydown", e => {
